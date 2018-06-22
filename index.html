@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>AF Contract Analysis</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <h1>AFUHSD Contract Projection 2018</h1>
+   <div>
+      Enter 2017-18 (last year) base salary here:<br>
+      <input id="base" type="text" value="42368">
+      <button type="button" id="update">Update</button>
+   </div>
+   <br>
+   <table id="table" style="width:40%" align="center">
+      <tr>
+         <td>First increase</td>
+         <td>$1435</td>
+      </tr>
+      <tr>
+         <td>First percent (3.75%)</td>
+         <td id="per1">$1643</td>
+      </tr>
+      <tr>
+         <td><i>Custom edits*</i></td>
+         <td><input id="edit1" type="text" placeholder="0"></td>
+      </tr>
+      <tr id="contract">
+         <td>First 2018-19 Contract</td>
+         <td id="base1">$45446</td>
+      </tr>
+      <tr>
+         <td>Second increase <br>($1435 + $2685)</td>
+         <td>$4120</td>
+      </tr>
+      <tr>
+         <td>Second percent <br>(3.75 + 4 = 7.75%)</td>
+         <td id="per2">$3603</td>
+      </tr>
+      <tr>
+         <td><i>Custom edits*</i></td>
+         <td><input id="edit2" type="text" placeholder="0"></td>
+      </tr>
+      <tr id="contract">
+         <td>Projected 2018-19 Contract<br>
+            <i>To be released 8/1/18</i></td>
+         <td id="base2">$50091</td>
+      </tr>
+      <tr>
+         <td>Year-to-year % increase</td>
+         <td id="inc">18%</td>
+      </tr>
+   </table>
+   <i>* Stipends added/removed since last year (coaching, 6/5ths, etc.)</i><br>
+   custom edits aren't set up, foo<br><br>
+   <div id="301">
+      <input type="checkbox" name="choose" unchecked /> Display 301 monies (projected)
+   <table id="table301" style="width:40%" align="center" class="hidden">
+      <tr>
+         <td>Percentage (3.5%)</td>
+         <td id="per301">$1753</td>
+      </tr>
+      <tr>
+         <td>Fixed (lump and scheduled)</td>
+         <td>$2600</td>
+      </tr>
+      <tr>
+         <td>Performance<input type="checkbox" name="performance" unchecked /></td>
+         <td id="perfmon">$0</td>
+      </tr>
+      <tr>
+         <td>After 301</td>
+         <td id="contract301">$54444</td>
+      </tr>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
