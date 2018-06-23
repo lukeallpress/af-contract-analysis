@@ -11,8 +11,9 @@
    <h1>AFUHSD Contract Projection 2018</h1>
    <div>
       Enter 2017-18 (last year) base salary here:<br>
-      <input id="base" type="text" value="42368">
-      <button type="button" id="update">Update</button>
+      <input id="base" type="text" value="42368" type="number" pattern="[0-9\.]*">
+      <button type="button" id="update">Update</button><br>
+      <span id="warning" class="hidden">Numbers only please!</span>
    </div>
    <br>
    <table id="table" style="width:40%" align="center">

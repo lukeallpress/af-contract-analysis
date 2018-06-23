@@ -1,4 +1,5 @@
 let button = document.querySelector("#update")
+var baseField = document.querySelector("#base")
 var check = document.querySelector("input[name=choose]")
 var perf = document.querySelector("input[name=performance]")
 var edit1 = document.querySelector("#edit1")
@@ -13,6 +14,17 @@ button.addEventListener('click', update)
 check.addEventListener('change', e => {
   document.querySelector("#table301").classList.toggle("hidden")
 })
+
+baseField.addEventListener("keyup", function(event) {
+  if (event.keyCode == 13) {
+    update()
+  }
+  if (isNaN(baseField.value)) {
+    document.querySelector("#warning").classList.remove("hidden")
+  } else {
+    document.querySelector("#warning").classList.add("hidden")
+  }
+});
 
 perf.addEventListener('change', e => {
   if (perf.checked) {
@@ -37,7 +49,7 @@ edit2.addEventListener("keyup", function(event) {
 });
 
 function update() {
-  var base = Number(document.querySelector("#base").value)
+  base = parseFloat(baseField.value)
   var per1 = (base + 1435) * 0.0375
   var per2 = (base + 4120) * 0.0775
   contract = base + 4120 + per2
