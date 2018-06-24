@@ -2,7 +2,7 @@
 <html>
 
 <head>
-   <meta charset="UTF-8">
+   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
    <title>AF Contract Analysis</title>
    <link rel="stylesheet" href="style.css">
 </head>
@@ -18,7 +18,7 @@
    <br>
    <table id="table" style="width:40%" align="center">
       <tr>
-         <td>First increase</td>
+         <td style="min-width:12em">First increase</td>
          <td>$1435</td>
       </tr>
       <tr>
@@ -27,7 +27,7 @@
       </tr>
       <tr>
          <td><i>Custom edits*</i></td>
-         <td><input id="edit1" type="text" placeholder="0"></td>
+         <td><input id="edit1" type="text" placeholder="0" style='width:6em' maxlength="6"></td>
       </tr>
       <tr id="contract">
          <td>First 2018-19 Contract</td>
@@ -43,7 +43,7 @@
       </tr>
       <tr>
          <td><i>Custom edits*</i></td>
-         <td><input id="edit2" type="text" placeholder="0"></td>
+         <td><input id="edit2" type="text" placeholder="0" style='width:6em' maxlength="6"></td>
       </tr>
       <tr id="contract">
          <td>Projected 2018-19 Contract<br>
@@ -56,12 +56,11 @@
       </tr>
    </table>
    <i>* Stipends added/removed since last year (coaching, 6/5ths, etc.)</i><br>
-   custom edits aren't set up, foo<br><br>
    <div id="301">
       <input type="checkbox" name="choose" unchecked /> Display 301 monies (projected)
    <table id="table301" style="width:40%" align="center" class="hidden">
       <tr>
-         <td>Percentage (3.5%)</td>
+         <td style="min-width:12em">Percentage (3.5%)</td>
          <td id="per301">$1753</td>
       </tr>
       <tr>
